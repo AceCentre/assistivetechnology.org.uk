@@ -9,7 +9,7 @@
   --color-accent-contrast: #ffffff;
   --color-border: rgba(11, 29, 60, 0.15);
   --font-family-base: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  --hero-background-image: url("https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/03/IMG_8548-scaled.jpg");
+  --hero-background-image: url("./IMG_8548-scaled.jpg");
   --transition-duration: 180ms;
   --max-content-width: 1200px;
   --card-radius: 20px;
