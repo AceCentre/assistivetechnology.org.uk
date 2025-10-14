@@ -155,6 +155,7 @@
 
 <script setup>
 import { ref, nextTick, onMounted, onBeforeUnmount } from 'vue';
+import heroImage from './assets/IMG_8548-scaled.jpg';
 
 const tabs = [
   { id: 'overview', label: 'Overview' },
