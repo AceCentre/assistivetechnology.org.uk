@@ -95,10 +95,10 @@ tabLinks.forEach((link) => link.addEventListener('click', activateFromLink));
 
 const initialPanel = getPanelIdFromHash();
 if (initialPanel) {
-  setActiveTab(initialPanel);
+  setActiveTab(initialPanel, { focus: false });
 } else if (tabButtons.length > 0) {
   const defaultId = tabButtons[0].dataset.panel;
-  setActiveTab(defaultId);
+  setActiveTab(defaultId, { focus: false });
   history.replaceState(null, '', `#${defaultId}`);
 }
 
