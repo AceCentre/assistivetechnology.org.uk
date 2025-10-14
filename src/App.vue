@@ -38,8 +38,8 @@
         <div class="hero-content">
           <div class="brand-mark">
             <img
-              :src="heroImage"
-              alt="Specialised Assistive Technology Services"
+              :src="brandLogo"
+              alt="NHS England logo"
               class="brand-logo"
             />
           </div>
@@ -155,7 +155,8 @@
 
 <script setup>
 import { ref, nextTick, onMounted, onBeforeUnmount } from 'vue';
-import heroImage from './assets/IMG_8548-scaled.jpg';
+
+const brandLogo = 'https://www.england.nhs.uk/wp-content/uploads/2017/03/nhs-logo.png';
 
 const tabs = [
   { id: 'overview', label: 'Overview' },
