@@ -97,7 +97,7 @@
           <article class="service-card" v-for="highlight in serviceHighlights" :key="highlight.id">
             <h3 class="service-title">{{ highlight.title }}</h3>
             <p class="service-description">{{ highlight.description }}</p>
-            <a class="text-link" href="javascript:void(0)" @click.prevent="setTab(highlight.target)">
+            <a class="text-link" :href="'#' + highlight.target" @click.prevent="setTab(highlight.target)">
               View services
             </a>
           </article>
