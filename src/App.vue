@@ -38,7 +38,7 @@
         <div class="hero-content">
           <div class="brand-mark">
             <img
-              src="https://assistivetechnology.org.uk/wp-content/uploads/2020/03/logo-dark-2.png"
+              :src="heroImage"
               alt="Specialised Assistive Technology Services"
               class="brand-logo"
             />
@@ -144,11 +144,6 @@
             </li>
           </ul>
         </template>
-        <template v-else-if="section.id === 'newsletter'">
-          <a class="signup-button" href="https://aacinfo.email" target="_blank" rel="noopener noreferrer">
-            Sign Up!
-          </a>
-        </template>
       </section>
     </main>
 
@@ -160,6 +155,7 @@
 
 <script setup>
 import { ref, nextTick, onMounted, onBeforeUnmount } from 'vue';
+import heroImage from './assets/IMG_8548-scaled.jpg';
 
 const tabs = [
   { id: 'overview', label: 'Overview' },
@@ -168,8 +164,7 @@ const tabs = [
   { id: 'home-education', label: 'Home & Education' },
   { id: 'supplier-resources', label: 'Supplier Resources' },
   { id: 'aac-services', label: 'AAC Services' },
-  { id: 'ec-services', label: 'EC Services' },
-  { id: 'newsletter', label: 'Newsletter' }
+  { id: 'ec-services', label: 'EC Services' }
 ];
 
 const serviceHighlights = [
@@ -416,11 +411,6 @@ const resourceSections = [
     id: 'ec-services',
     title: 'EC Services',
     description: 'Listed below are the Environmental Control Services in England.'
-  },
-  {
-    id: 'newsletter',
-    title: 'AAC Info Newsletter',
-    description: 'Sign up for AACInfo, a monthly newsletter of all things AAC.'
   }
 ];
 
