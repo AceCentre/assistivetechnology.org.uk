@@ -156,7 +156,7 @@
 <script setup>
 import { ref, nextTick, onMounted, onBeforeUnmount } from 'vue';
 
-const brandLogo = 'https://www.england.nhs.uk/wp-content/uploads/2017/03/nhs-logo.png';
+const brandLogo = 'https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg';
 
 const tabs = [
   { id: 'overview', label: 'Overview' },
