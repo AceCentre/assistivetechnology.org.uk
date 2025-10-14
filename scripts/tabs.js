@@ -1,7 +1,7 @@
 const tabButtons = Array.from(document.querySelectorAll('[role="tab"][data-panel]'));
 const tabPanels = Array.from(document.querySelectorAll('.tab-panel'));
 
-function setActiveTab(targetId) {
+function setActiveTab(targetId, { focus = true } = {}) {
   if (!targetId) {
     return;
   }
@@ -27,7 +27,9 @@ function setActiveTab(targetId) {
     }
   });
 
-  targetButton.focus();
+  if (focus) {
+    targetButton.focus();
+  }
 }
 
 function getPanelIdFromHash() {
