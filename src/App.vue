@@ -39,11 +39,11 @@
           <div class="brand-mark">
             <img
               :src="heroImage"
-              alt="Specialised Assistive Technology Services"
+              alt="NHS England logo"
               class="brand-logo"
             />
           </div>
-          <h1 class="hero-title">NHS England Specialised AAC and EC Services</h1>
+          <h1 class="hero-title">Specialised AAC and EC Services</h1>
           <p class="hero-description">
             NHS England commission Specialised Assistive Technology Services for people of all ages in England. These are provided through a number of organisations, some of which only provide Augmentative and Alternative Communication (AAC) services, some only Environmental Control (EC) Services, and some both.
           </p>
@@ -155,7 +155,8 @@
 
 <script setup>
 import { ref, nextTick, onMounted, onBeforeUnmount } from 'vue';
-import heroImage from './assets/IMG_8548-scaled.jpg';
+
+const heroImage = 'https://www.england.nhs.uk/wp-content/themes/nhsengland/static/img/nhs-england-white.svg';
 
 const tabs = [
   { id: 'overview', label: 'Overview' },
