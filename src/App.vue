@@ -43,7 +43,7 @@
               class="brand-logo"
             />
           </div>
-          <h1 class="hero-title">NHS England Specialised AAC and EC Services</h1>
+          <h1 class="hero-title">Specialised AAC and EC Services</h1>
           <p class="hero-description">
             NHS England commission Specialised Assistive Technology Services for people of all ages in England. These are provided through a number of organisations, some of which only provide Augmentative and Alternative Communication (AAC) services, some only Environmental Control (EC) Services, and some both.
           </p>
@@ -319,7 +319,7 @@ const resourceSections = [
         href: 'https://chatterpack.net/blogs/blog/resources-list-for-home-learning'
       },
       {
-        title: 'Chatterpack’s specific SLCN & SEND free resource list',
+        title: 'Chatterpack���s specific SLCN & SEND free resource list',
         description: 'Direct access to Chatterpack’s list of free speech, language, communication and SEND resources.',
         image: 'https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/chatterpack.png',
         alt: 'Chatterpack SEND resource list',
