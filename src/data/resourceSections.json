@@ -1,0 +1,136 @@
+[
+  {
+    "id": "general-resources",
+    "title": "Specialised AAC services",
+    "cards": [
+      {
+        "title": "Compass Assistive and Rehabilitation Technology Resources",
+        "description": "A collection of resources created by Compass Specialised AAC Service, including COVID-19 materials.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/compass-resources.png",
+        "alt": "Compass resources graphic",
+        "href": "https://www.rhn.org.uk/what-makes-us-special/services/compass"
+      },
+      {
+        "title": "Barnsley AT How-to Videos",
+        "description": "How-to videos from Barnsley Assistive Technology Service showing practical tasks related to provided equipment.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/barnsley-resources.png",
+        "alt": "Barnsley Assistive Technology videos",
+        "href": "https://www.barnsleyhospital.nhs.uk/assistive-technology/resources-and-information/howto-videos"
+      },
+      {
+        "title": "Ace Centre Resources",
+        "description": "Regular resources from Ace Centre including starter guides, symbol and alphabet charts, and publications.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/ace-centre-resources.png",
+        "alt": "Ace Centre resources graphic",
+        "href": "https://acecentre.org.uk/resources"
+      },
+      {
+        "title": "ACT (Birmingham) Resources",
+        "description": "Resources from Access to Communication and Technology (ACT) to support AAC and related topics.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/act-resources.png",
+        "alt": "ACT Birmingham resources",
+        "href": "https://www.bhamcommunity.nhs.uk/patients-public/rehabilitation/act/information-and-resources"
+      },
+      {
+        "title": "Assessment of Learning Process for AAC",
+        "description": "ALP for AAC breaks learning into stages and phases to support progression across access methods.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/06/alpforaac.png",
+        "alt": "Assessment of Learning Process for AAC graphic",
+        "href": "https://www.alpforaac.com"
+      },
+      {
+        "title": "Understanding the virus and staying safe",
+        "description": "Easy read resources to explain the virus and what actions to take to stay safe and informed.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2021/02/include-org.png",
+        "alt": "Understanding the virus and staying safe resources",
+        "href": "https://include.org/understanding-the-virus-and-staying-safe"
+      },
+      {
+        "title": "Communication Matters",
+        "description": "UK-wide organisation supporting people of all ages who have little or no clear speech.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2021/11/cropped-Screenshot-2021-11-05-at-14.56.51.png",
+        "alt": "Communication Matters logo",
+        "href": "https://www.communicationmatters.org.uk"
+      },
+      {
+        "title": "Special Needs Jungle's Distance education resources for children and young people with SEND",
+        "description": "A comprehensive list of information and resources for children and young people with SEND and their families.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/special-needs-jungle.png",
+        "alt": "Special Needs Jungle distance education resources",
+        "href": "https://www.specialneedsjungle.com/distance-education-resources-for-children-and-young-people-with-send"
+      }
+    ]
+  },
+  {
+    "id": "home-education",
+    "title": "Local AAC",
+    "cards": [
+      {
+        "title": "TechAbility",
+        "description": "Useful links to technology and assistance from leading equipment suppliers and support organisations.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/techability.png",
+        "alt": "TechAbility resource logo",
+        "href": "https://www.techability.org.uk/resources/aiding-learning-from-home"
+      },
+      {
+        "title": "NEW Home Access Licence and free HelpKidzLearn Resources",
+        "description": "HelpKidzLearn share free resources and a flexible Home Access licence to support families during the outbreak.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/help-kidz-learn.png",
+        "alt": "HelpKidzLearn resources graphic",
+        "href": "https://www.helpkidzlearn.com/updates/school-closure.html"
+      },
+      {
+        "title": "Chatterpack's Home Learning Resource Kit",
+        "description": "Chatterpack curates inclusive home learning resources for schools and families, including SEND-specific content.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/chatterpack.png",
+        "alt": "Chatterpack resource list",
+        "href": "https://chatterpack.net/blogs/blog/resources-list-for-home-learning"
+      },
+      {
+        "title": "Chatterpack's specific SLCN & SEND free resource list",
+        "description": "Direct access to Chatterpack's list of free speech, language, communication and SEND resources.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/chatterpack.png",
+        "alt": "Chatterpack SEND resource list",
+        "href": "https://chatterpack.net/blogs/blog/resources-list-for-home-learning"
+      },
+      {
+        "title": "Cenmac Home Learning Information Page",
+        "description": "Cenmac share SEN resource areas with downloads, guidance and online activities for home learning.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/cenmac.png",
+        "alt": "Cenmac home learning",
+        "href": "https://cenmac.com/home-learning"
+      },
+      {
+        "title": "PraAACtical Resources: Dealing with the Covid-19 Pandemic",
+        "description": "An interactive graphic linking to free downloadable resources that support AAC learners with routines and learning.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/praactical-aac.png",
+        "alt": "PraAACtical AAC resources",
+        "href": "https://praacticalaac.org/praactical/praactical-resources-dealing-with-the-covid-19-pandemic"
+      },
+      {
+        "title": "Learning Disability England's Resources for Individuals and Families",
+        "description": "Information and resources to help people stay safe, well and connected during the pandemic.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/learning-disability-england.png",
+        "alt": "Learning Disability England resources",
+        "href": "https://www.learningdisabilityengland.org.uk/what-we-do/keeping-informed-and-in-touch-during-coronavirus/resources-that-can-help"
+      },
+      {
+        "title": "Special Needs Jungle's Distance education resources for SEND",
+        "description": "Distance education resources for children and young people with SEND compiled by Special Needs Jungle.",
+        "image": "https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/04/special-needs-jungle.png",
+        "alt": "Special Needs Jungle resources",
+        "href": "https://www.specialneedsjungle.com/distance-education-resources-for-children-and-young-people-with-send"
+      }
+    ]
+  },
+  {
+    "id": "aac-services",
+    "title": "AAC Services",
+    "description": "Listed below are Augmentative and Alternative Communication Services in England."
+  },
+  {
+    "id": "ec-services",
+    "title": "EC Services",
+    "description": "Listed below are the Environmental Control Services in England."
+  }
+]

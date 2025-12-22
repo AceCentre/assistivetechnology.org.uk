@@ -1,0 +1,14 @@
+[
+  {
+    "id": "aac-highlight",
+    "title": "AAC Services",
+    "description": "Specialised AAC services assess for and provide appropriate assistive technologies for people with complex communication difficulties and a clear discrepancy between their understanding and their ability to speak.",
+    "target": "aac-services"
+  },
+  {
+    "id": "ec-highlight",
+    "title": "EC Services",
+    "description": "Specialised EC services assess for and provide assistive technologies for people whose severe disabilities restrict independent use of standard controls for their environment and technology.",
+    "target": "ec-services"
+  }
+]

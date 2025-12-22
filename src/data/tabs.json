@@ -1,0 +1,26 @@
+[
+  {
+    "id": "overview",
+    "label": "Overview"
+  },
+  {
+    "id": "general-resources",
+    "label": "Specialised AAC services",
+    "description": "Explore a comprehensive collection of assistive technology resources, guides, and materials from various specialized services across England."
+  },
+  {
+    "id": "home-education",
+    "label": "Local AAC",
+    "description": "Find resources designed to support home learning and education for children and young people with special educational needs and disabilities (SEND)."
+  },
+  {
+    "id": "aac-services",
+    "label": "AAC Services",
+    "description": "Specialised AAC services assess for and provide appropriate assistive technologies for people with complex communication difficulties and a clear discrepancy between their understanding and their ability to speak."
+  },
+  {
+    "id": "ec-services",
+    "label": "EC Services",
+    "description": "Specialised EC services assess for and provide assistive technologies for people whose severe disabilities restrict independent use of standard controls for their environment and technology."
+  }
+]
