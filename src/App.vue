@@ -224,9 +224,6 @@
             v-for="card in section.cards"
             :key="card.title"
           >
-            <div class="resource-image" v-if="card.image">
-              <img :src="card.image" :alt="card.alt" />
-            </div>
             <div class="resource-content">
               <h3 class="resource-title">{{ card.title }}</h3>
               <p class="resource-description">{{ card.description }}</p>
