@@ -35,7 +35,7 @@
             <li>
               <a
                 class="primary-link"
-                href="https://assistivetechnology.org.uk/humhub"
+                href="https://forum.assistivetechnology.org.uk"
                 target="_blank"
                 rel="noopener noreferrer"
               >
