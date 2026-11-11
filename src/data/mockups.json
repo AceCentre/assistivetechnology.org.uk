@@ -1,0 +1,22 @@
+[
+  {
+    "id": "current",
+    "label": "Current site",
+    "summary": "Today’s colours and Source Sans. Photo hero. Baseline for comparison."
+  },
+  {
+    "id": "nhs-arial",
+    "label": "NHS palettes + Arial",
+    "summary": "AAC Services in NHS blues, EC Services in support greens, Local AAC in highlights. Arial, 19px body."
+  },
+  {
+    "id": "nhs-atkinson",
+    "label": "NHS palettes + Atkinson",
+    "summary": "Same section palettes with Atkinson Hyperlegible, a font designed for low vision and dyslexia."
+  },
+  {
+    "id": "high-contrast",
+    "label": "High contrast",
+    "summary": "Black text on white, thick borders, underlined links, Arial. Strongest contrast option."
+  }
+]
