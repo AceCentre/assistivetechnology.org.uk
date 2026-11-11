@@ -4,15 +4,22 @@
   --color-surface: #ffffff;
   --color-surface-alt: #f5f7fb;
   --color-text-primary: #0b1d3c;
+  --color-text-muted: rgba(11, 29, 60, 0.75);
   --color-text-light: #ffffff;
   --color-accent: #0072ce;
   --color-accent-contrast: #ffffff;
   --color-border: rgba(11, 29, 60, 0.15);
-  --font-family-base: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  --color-focus: #0072ce;
+  --color-card-aac: #ff6b35;
+  --color-card-ec: #2c3e50;
+  --font-family-base: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  --font-size-body: 1rem;
   --hero-background-image: url("https://assistivetechnology.org.uk/wordpress/wp-content/uploads/2020/03/IMG_8548-scaled.jpg");
+  --hero-overlay: linear-gradient(135deg, rgba(3, 14, 30, 0.9) 0%, rgba(0, 114, 206, 0.6) 100%);
   --transition-duration: 180ms;
   --max-content-width: 1200px;
   --card-radius: 20px;
+  --link-decoration: none;
 }
 
 * {
@@ -23,42 +30,61 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: #ffffff;
+}
+
+/* Site styles stay inside #app so Recite Me / Accessibly chrome is not restyled. */
+#app {
+  min-height: 100vh;
   font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
   background-color: var(--color-surface-alt);
   line-height: 1.6;
 }
 
-a {
+#app a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: var(--link-decoration);
 }
 
-a:focus {
-  outline: 3px solid var(--color-accent);
-  outline-offset: 2px;
+#app a:focus,
+#app a:focus-visible,
+#app button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
 }
 
-img {
+#app img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .skip-link {
   position: absolute;
   top: -100%;
-  left: 0;
+  left: 0.75rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--color-accent);
   color: var(--color-accent-contrast);
-  border-radius: 999px;
-  z-index: 10;
-  transition: top var(--transition-duration) ease;
+  z-index: 40;
 }
 
 .skip-link:focus {
-  top: 1rem;
+  top: 0.75rem;
 }
 
 .hero {
@@ -77,7 +103,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(3, 14, 30, 0.9) 0%, rgba(0, 114, 206, 0.6) 100%);
+  background: var(--hero-overlay);
 }
 
 .hero-overlay {
@@ -115,15 +141,24 @@ img {
 }
 
 .primary-link:hover,
-.primary-link:focus-visible {
+.primary-link:focus-visible,
+.primary-link--active {
   background-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
+}
+
+.primary-link--active {
+  transform: none;
 }
 
 .hero-content {
   max-width: 680px;
   margin: 0 auto;
   text-align: center;
+}
+
+.brand-mark a {
+  display: inline-block;
 }
 
 .brand-logo {
@@ -189,6 +224,7 @@ img {
 
 .tab-list {
   display: flex;
+  justify-content: center;
   gap: 0.5rem;
   overflow-x: auto;
   padding: 1rem clamp(1rem, 3vw, 3rem);
@@ -216,6 +252,7 @@ img {
   cursor: pointer;
   transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .navigation-tab .tab-icon {
@@ -232,10 +269,14 @@ img {
   color: var(--color-accent);
 }
 
-.navigation-tab[aria-selected="true"] {
+.navigation-tab--active {
   background-color: var(--color-accent);
   color: var(--color-accent-contrast);
   box-shadow: 0 10px 24px rgba(0, 114, 206, 0.35);
+}
+
+.navigation-tab--active .tab-icon {
+  color: var(--color-accent-contrast);
 }
 
 .navigation-tab:focus-visible {
@@ -280,7 +321,7 @@ img {
 .section-summary {
   margin: 0 auto;
   max-width: 65ch;
-  color: rgba(11, 29, 60, 0.7);
+  color: var(--color-text-muted);
   font-size: 1.05rem;
 }
 
@@ -302,11 +343,11 @@ img {
 }
 
 .service-card--aac {
-  background-color: #FF6B35;
+  background-color: var(--color-card-aac);
 }
 
 .service-card--ec {
-  background-color: #2C3E50;
+  background-color: var(--color-card-ec);
 }
 
 .service-card--service-finder {
@@ -377,7 +418,7 @@ img {
 }
 
 .service-button--aac {
-  background-color: #FF6B35;
+  background-color: var(--color-card-aac);
   border-color: white;
   color: white;
 }
@@ -389,9 +430,9 @@ img {
 }
 
 .service-button--ec {
-  background-color: #2C3E50;
-  border-color: #FFD700;
-  color: #FFD700;
+  background-color: var(--color-card-ec);
+  border-color: #ffd700;
+  color: #ffd700;
 }
 
 .service-button--ec:hover,
@@ -473,7 +514,7 @@ img {
 
 .resource-description {
   margin: 0;
-  color: rgba(11, 29, 60, 0.75);
+  color: var(--color-text-muted);
   font-size: 0.98rem;
 }
 
@@ -522,7 +563,7 @@ img {
 .site-footer {
   text-align: center;
   padding: 2rem 1rem 3rem;
-  color: rgba(11, 29, 60, 0.65);
+  color: var(--color-text-muted);
 }
 
 .footer-text {
@@ -569,4 +610,220 @@ img {
   .resource-content {
     padding: 1.25rem;
   }
+}
+
+/* Team colour / font mock-ups */
+#app[data-mockup="nhs-arial"],
+#app[data-mockup="nhs-atkinson"] {
+  --color-background: #005eb8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e8edee;
+  --color-text-primary: #231f20;
+  --color-text-muted: #425563;
+  --color-text-light: #ffffff;
+  --color-accent: #005eb8;
+  --color-accent-contrast: #ffffff;
+  --color-border: #d8dde0;
+  --color-focus: #ffeb3b;
+  --color-card-aac: #005eb8;
+  --color-card-ec: #003087;
+  --font-size-body: 19px;
+  --hero-background-image: none;
+  --hero-overlay: #005eb8;
+  --card-radius: 4px;
+}
+
+/* AAC Services and home: Level 1 NHS blues */
+#app[data-mockup="nhs-arial"][data-section="home"],
+#app[data-mockup="nhs-atkinson"][data-section="home"],
+#app[data-mockup="nhs-arial"][data-section="aac-services"],
+#app[data-mockup="nhs-atkinson"][data-section="aac-services"] {
+  --color-background: #005eb8;
+  --color-accent: #005eb8;
+  --color-card-aac: #005eb8;
+  --color-card-ec: #003087;
+  --hero-overlay: #005eb8;
+}
+
+/* EC Services: Level 3 NHS support greens */
+#app[data-mockup="nhs-arial"][data-section="ec-services"],
+#app[data-mockup="nhs-atkinson"][data-section="ec-services"] {
+  --color-background: #006747;
+  --color-accent: #006747;
+  --color-card-aac: #006747;
+  --color-card-ec: #009639;
+  --hero-overlay: #006747;
+}
+
+/* Local AAC: Level 4 NHS highlights, used as section colour plus small accents */
+#app[data-mockup="nhs-arial"][data-section="local-aac"],
+#app[data-mockup="nhs-atkinson"][data-section="local-aac"] {
+  --color-background: #330072;
+  --color-accent: #330072;
+  --color-card-aac: #ae2573;
+  --color-card-ec: #7c2855;
+  --hero-overlay: #330072;
+  --color-focus: #ffb81c;
+}
+
+#app[data-mockup="nhs-arial"] {
+  --font-family-base: Arial, sans-serif;
+}
+
+#app[data-mockup="nhs-atkinson"] {
+  --font-family-base: "Atkinson Hyperlegible", Arial, sans-serif;
+}
+
+#app[data-mockup="nhs-arial"] .hero,
+#app[data-mockup="nhs-atkinson"] .hero {
+  background-color: var(--hero-overlay);
+  background-image: none;
+  min-height: 70vh;
+}
+
+#app[data-mockup="nhs-arial"][data-section="local-aac"] .action-button:not(.action-button-secondary),
+#app[data-mockup="nhs-atkinson"][data-section="local-aac"] .action-button:not(.action-button-secondary) {
+  background-color: #ffb81c;
+  color: #231f20;
+}
+
+#app[data-mockup="high-contrast"] {
+  --color-background: #000000;
+  --color-surface: #ffffff;
+  --color-surface-alt: #ffffff;
+  --color-text-primary: #000000;
+  --color-text-muted: #000000;
+  --color-text-light: #ffffff;
+  --color-accent: #000000;
+  --color-accent-contrast: #ffffff;
+  --color-border: #000000;
+  --color-focus: #ffeb3b;
+  --color-card-aac: #000000;
+  --color-card-ec: #000000;
+  --font-family-base: Arial, sans-serif;
+  --font-size-body: 19px;
+  --link-decoration: underline;
+  --hero-background-image: none;
+  --hero-overlay: #000000;
+  --card-radius: 0;
+}
+
+#app[data-mockup="high-contrast"] .hero {
+  background-color: #000000;
+  min-height: 70vh;
+}
+
+#app[data-mockup="high-contrast"] .navigation-tab,
+#app[data-mockup="high-contrast"] .resource-card,
+#app[data-mockup="high-contrast"] .service-list a {
+  border: 2px solid #000000;
+}
+
+#app[data-mockup="nhs-arial"] .primary-link,
+#app[data-mockup="nhs-atkinson"] .primary-link,
+#app[data-mockup="high-contrast"] .primary-link {
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+#app[data-mockup="high-contrast"] .primary-link,
+#app[data-contrast="high"] .primary-link {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+
+#app[data-contrast="high"] {
+  --color-background: #000000;
+  --color-surface: #ffffff;
+  --color-surface-alt: #ffffff;
+  --color-text-primary: #000000;
+  --color-text-muted: #000000;
+  --color-text-light: #ffff00;
+  --color-accent: #000000;
+  --color-accent-contrast: #ffff00;
+  --color-border: #000000;
+  --color-focus: #ffff00;
+  --color-card-aac: #000000;
+  --color-card-ec: #000000;
+  --link-decoration: underline;
+  --hero-background-image: none;
+  --hero-overlay: #000000;
+}
+
+#app[data-contrast="high"] .hero {
+  background-image: none;
+  background-color: #000000;
+}
+
+#app[data-contrast="high"] .hero,
+#app[data-contrast="high"] .hero-title,
+#app[data-contrast="high"] .hero-description {
+  color: #ffff00;
+}
+
+.preview-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0.75rem 1rem 0.9rem;
+  background: #231f20;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.preview-bar-label,
+.preview-bar-summary {
+  margin: 0 auto 0.5rem;
+  max-width: var(--max-content-width);
+}
+
+.preview-bar-summary {
+  margin-bottom: 0;
+  color: #e8edee;
+}
+
+.preview-bar-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: var(--max-content-width);
+  margin: 0 auto 0.5rem;
+}
+
+.preview-bar-button,
+.preview-bar-copy,
+.a11y-controls-button {
+  appearance: none;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  padding: 0.45rem 0.8rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.preview-bar-button--active,
+.preview-bar-copy:hover,
+.a11y-controls-button[aria-pressed="true"] {
+  background: #ffffff;
+  color: #231f20;
+}
+
+.a11y-controls {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 30;
+}
+
+.a11y-controls-button {
+  background: #005eb8;
+  border-color: #005eb8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }

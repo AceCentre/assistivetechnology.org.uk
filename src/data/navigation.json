@@ -1,0 +1,95 @@
+{
+  "primary": [
+    {
+      "id": "aac-services",
+      "label": "AAC Services",
+      "to": "/aac-services"
+    },
+    {
+      "id": "ec-services",
+      "label": "EC Services",
+      "to": "/ec-services"
+    },
+    {
+      "id": "local-aac",
+      "label": "Local AAC",
+      "to": "/local-aac"
+    },
+    {
+      "id": "staff-login",
+      "label": "Specialised Services Login",
+      "href": "https://forum.assistivetechnology.org.uk"
+    }
+  ],
+  "secondary": {
+    "aac-services": [
+      {
+        "id": "need-aac",
+        "label": "Need AAC",
+        "to": "/aac-services/need-aac"
+      },
+      {
+        "id": "have-aac",
+        "label": "Have AAC",
+        "to": "/aac-services/have-aac"
+      },
+      {
+        "id": "work-with-aac",
+        "label": "Work with AAC",
+        "to": "/aac-services/work-with-aac"
+      },
+      {
+        "id": "resources",
+        "label": "Resources",
+        "to": "/aac-services/resources",
+        "icon": "speech"
+      }
+    ],
+    "ec-services": [
+      {
+        "id": "need-aac",
+        "label": "Need AAC",
+        "to": "/ec-services/need-aac"
+      },
+      {
+        "id": "have-aac",
+        "label": "Have AAC",
+        "to": "/ec-services/have-aac"
+      },
+      {
+        "id": "work-with-aac",
+        "label": "Work with AAC",
+        "to": "/ec-services/work-with-aac"
+      },
+      {
+        "id": "resources",
+        "label": "Resources",
+        "to": "/ec-services/resources",
+        "icon": "speech"
+      }
+    ],
+    "local-aac": [
+      {
+        "id": "need-aac",
+        "label": "Need AAC",
+        "to": "/local-aac/need-aac"
+      },
+      {
+        "id": "have-aac",
+        "label": "Have AAC",
+        "to": "/local-aac/have-aac"
+      },
+      {
+        "id": "work-with-aac",
+        "label": "Work with AAC",
+        "to": "/local-aac/work-with-aac"
+      },
+      {
+        "id": "resources",
+        "label": "Resources",
+        "to": "/local-aac/resources",
+        "icon": "speech"
+      }
+    ]
+  }
+}
